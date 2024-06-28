@@ -1,7 +1,11 @@
+import { useContext, useState } from "react"
+import { AuthContext } from "../../contexts/AuthContext"
+
 export const Login = () => {
 
+    const [data, setData] = useState({});
+    const {onLoginSubmit} = useContext(AuthContext);
 
-    
     return(
         <section id="login-page" className="auth">
               <form id="login" method='POST' onSubmit={}>
