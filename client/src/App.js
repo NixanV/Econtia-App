@@ -2,7 +2,8 @@ import { Route, Routes, useNavigate } from "react-router-dom";
 import { Login } from "./components/Login/Login";
 import { AuthContext } from "./contexts/AuthContext";
 import { useState } from "react";
-import {Home} from "./components/Home/Home"
+import {Home} from "./components/Home/Home";
+import {Header} from "./components/Header/Header"
 
 import {login} from "./services/authService"
 
@@ -28,8 +29,10 @@ function App() {
   };
   return (
     <div className="App">
+      <Header />
       <main> 
         <AuthContext.Provider value={contextValues}>
+
           <Routes>
             <Route path="/" element={<Login />}/>
             <Route path="/home" element = {<Home />} />
