@@ -44,7 +44,7 @@ export const Login = () => {
                         onChange={onChangeHandler}
                         //Todo onChange changeHadler
                         />
-                      <input type="submit" className="btn submit" value="Login" />
+                      <input type="submit" className="btn submit" value="Login"  />
                   </div>
               </form>
           </section>
