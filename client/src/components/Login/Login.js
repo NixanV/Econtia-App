@@ -5,10 +5,9 @@ export const Login = () => {
 
     const [data, setData] = useState({});
     const {onLoginSubmit} = useContext(AuthContext);
-
     return(
         <section id="login-page" className="auth">
-              <form id="login" method='POST' onSubmit={}>
+              <form id="login" method='POST' onSubmit={onLoginSubmit}>
   
                   <div className="container">
                       <div className="brand-logo"></div>

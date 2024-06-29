@@ -12,6 +12,7 @@ function App() {
   const onLoginSubmit = async (data) => {
     try {
       const res = await login(data);
+      console.log(res);
       setAuth(res)
     } catch (error) {
       console.log("Problem");
