@@ -27,7 +27,7 @@ export const Home = () => {
                     </Link>
                 </div>
                 <div>
-                <Link to="/tursi-tovarene" className={style["tursi-tovarene"]}>
+                <Link to="/nov-tovarene" className={style["tursi-tovarene"]}>
                         Нов протокол <svg className={style["right-arrow-bottom"]} xmlns="http://www.w3.org/2000/svg" 
                                         viewBox="0 -960 960 960">
                     <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z"/></svg>
