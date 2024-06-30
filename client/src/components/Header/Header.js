@@ -1,13 +1,14 @@
 
+import { Link } from "react-router-dom";
 import style from "./header.module.css"
 
 export const Header = () => {
     return(
         <nav className={style["nav-bar"]}>
             <div className={style["left-div"]}>
-                <p className={style["econt-text"]}>
+                <Link to="/home" className={style["econt-text"]}>
                     Econtia
-                </p>
+                </Link>
             </div>
             <div className={style["empty-on-homepage"]}>
 

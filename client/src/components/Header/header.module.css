@@ -5,13 +5,19 @@
     justify-content: space-between;
 }
 
+.left-div{
+    margin-top: 14px;
+
+}
+
 .econt-text{
     color: white;
     font-size: 26px;
     font-family: 'proxima-nova', sans-serif;
-    margin: 0;
+    margin: 10px;
     padding: 15px 70px;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .right-div{
