@@ -1,0 +1,21 @@
+.main-component{
+    width: 90%;
+    margin-left: 30px;
+    margin-top: 90px;
+    border: solid gray 1px;
+    height: 40px;
+    font-family: sans-serif;
+    border-radius: 2px;
+    word-spacing: 7px;
+    padding-bottom: 8px;
+}
+
+
+.icon{
+    width: 24px;
+    height: 24px;
+    fill: #5f6368;
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-left: 10px;
+}

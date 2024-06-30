@@ -2,12 +2,10 @@ import { json } from "react-router-dom";
 
 const baseUrl = "http://localhost:3030/jsonstore/tovarene";
 
-export const getAllLoading = async (data) => {
+export const getAllLoading = async () => {
     try {
         const response = await fetch(baseUrl);
-        console.log(response);
         const result = await response.json();
-        console.log(result);
         return result
     
     } catch (error) {
