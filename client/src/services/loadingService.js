@@ -12,3 +12,13 @@ export const getAllLoading = async () => {
         console.log("there is an error");
     }
 }
+
+export const getOneLoading = async (id) => {
+    try {
+        const res = await fetch(`${baseUrl}/${id}`);
+        const result = await res.json();
+        return result;
+    } catch (error) {
+        console.log("cant find item with that id");
+    }
+}

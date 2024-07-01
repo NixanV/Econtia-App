@@ -1,7 +1,6 @@
 .main-component{
     width: 90%;
-    margin-left: 30px;
-    margin-top: 90px;
+    margin-top: 2px;
     border: solid gray 1px;
     height: 40px;
     font-family: sans-serif;
@@ -10,6 +9,10 @@
     padding-bottom: 8px;
 }
 
+/* .section-comp{
+    margin-left: 30px;
+    margin-top: 90px;
+} */
 
 .icon{
     width: 24px;
