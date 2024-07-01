@@ -8,6 +8,7 @@ import {Header} from "./components/Header/Header"
 import {login} from "./services/authService"
 import { NovTovarene } from "./components/NovTovarene/NovTovarene";
 import { TursiTovarene } from "./components/TursiTovarene/TursiTovarene";
+import { TovareneDetails } from "./components/TovareneDetails/TovareneDetails";
 
 function App() {
 
@@ -39,7 +40,8 @@ function App() {
             <Route path="/" element={<Login />}/>
             <Route path="/home" element = {<Home />} />
             <Route path="/nov-tovarene" element = {<NovTovarene />} /> 
-            <Route path="/tursi-tovarene" element={<TursiTovarene />} />
+            <Route path="/tovarene" element={<TursiTovarene />} />
+            <Route path="/tovarene/:tovareneId" element={<TovareneDetails />} /> 
           </Routes>
         </AuthContext.Provider>
         

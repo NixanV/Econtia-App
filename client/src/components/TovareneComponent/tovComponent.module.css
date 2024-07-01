@@ -7,13 +7,14 @@
     border-radius: 2px;
     word-spacing: 7px;
     padding-bottom: 8px;
+
 }
 
-/* .section-comp{
-    margin-left: 30px;
-    margin-top: 90px;
-} */
 
+.tovarene-link{
+    text-decoration: none;
+    color: black;
+}
 .icon{
     width: 24px;
     height: 24px;

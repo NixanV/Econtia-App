@@ -16,6 +16,7 @@ export const getAllLoading = async () => {
 export const getOneLoading = async (id) => {
     try {
         const res = await fetch(`${baseUrl}/${id}`);
+        console.log(res);
         const result = await res.json();
         return result;
     } catch (error) {
