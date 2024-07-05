@@ -23,3 +23,19 @@ export const getOneLoading = async (id) => {
         console.log("cant find item with that id");
     }
 }
+
+export const postNewLoading = async (info) => {
+    try {
+        return await fetch(baseUrl,{
+            method: "POST",
+            headers: {
+                "content-type": "application/json"
+            },
+            body: JSON.stringify(info)
+        })
+        .then(res => res.json());
+        
+    } catch (error) {
+        console.log("not send request");
+    }
+}
