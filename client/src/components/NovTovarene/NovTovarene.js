@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 import style from "./novTovarene.module.css";
 import {Button, Form} from "react-bootstrap";
 import { postNewLoading } from "../../services/loadingService";
+import { useNavigate } from "react-router-dom";
 
 
 export const NovTovarene = () => {
+    const navigate = useNavigate();
 
     const [data, setData] = useState({
         numberOfLine: "",
@@ -21,10 +23,14 @@ export const NovTovarene = () => {
         )
     }
 
-    const onSubmitHandler = (e, info) => {
+    const onSubmitHandler = async (e, info) => {
         e.preventDefault();
-        const res =  postNewLoading(info);
-        console.log(res);
+        const res = await postNewLoading(info);
+        console.log(res._id);
+
+         navigate(`tovarene/${res._id}`)
+        
+
     }
     
     return(
