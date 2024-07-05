@@ -15,13 +15,10 @@ export const TovareneDetails = () => {
 
     useEffect(() => {
         getOneLoading(tovareneId).then(
-            res => setDetail(res),
-            
+            res => setDetail(res),  
         )
-
     }, [tovareneId]);
 
-    console.log(detail);
 
 
     return(

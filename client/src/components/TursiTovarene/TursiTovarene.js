@@ -9,15 +9,15 @@ export const TursiTovarene = () => {
     useEffect(() => {
         getAllLoading().then((result) => {
             setLine(Object.values(result))
-
         })
     }, [])
-    
-    console.log(lines);
 
     return(
         <section className={style["section-t-tovarene"]}>
-            {lines.map((line) => (
+            {!lines ? 
+            <div>
+                no lines existed
+            </div> : lines.map((line) => (
                 <TovareneComponent key={line._id} {...line} />
             ))}
         </section>
