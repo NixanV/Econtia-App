@@ -6,9 +6,10 @@ export const TovareneComponent = ({
     nameOfLine,
     numberOfPackets,
     driver,
+    opened,
     _id,
 }) => {
-
+    console.log(opened);
     return(
         <section className={style["section-comp"]}>
             <div className={style["main-component"]}>

@@ -11,7 +11,8 @@ export const NovTovarene = () => {
     const [data, setData] = useState({
         numberOfLine: "",
         nameOfLine: "",
-        driver: ""
+        driver: "",
+        opened: false,
     });
 
     const changeHandler = (e) => {

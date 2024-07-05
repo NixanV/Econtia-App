@@ -19,7 +19,8 @@ export const TovareneDetails = () => {
         )
     }, []);
 
-
+    detail.opened = true;
+    console.log(detail.opened);
 
     return(
         <>
