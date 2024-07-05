@@ -17,7 +17,7 @@ export const TovareneDetails = () => {
         getOneLoading(tovareneId).then(
             res => setDetail(res),  
         )
-    }, [tovareneId]);
+    }, []);
 
 
 

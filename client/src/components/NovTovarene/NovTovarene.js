@@ -28,7 +28,7 @@ export const NovTovarene = () => {
         const res = await postNewLoading(info);
         console.log(res._id);
 
-         navigate(`tovarene/${res._id}`)
+         navigate(`/tovarene/${res._id}`, {replace: true})
         
 
     }
