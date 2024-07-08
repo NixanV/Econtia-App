@@ -46,7 +46,7 @@ function App() {
             <Route path="/tovarene/:tovareneId" element={<TovareneDetails />} /> 
             <Route path="/tovarene-men" element={<TovareneMen />} />
 
-            <Route path="/grouping" element={<SearachingGrouping />} />
+            <Route path="/grupirane" element={<SearachingGrouping />} />
           </Routes>
         </AuthContext.Provider>
         
