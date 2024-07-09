@@ -1,0 +1,25 @@
+.main-component{
+    width: 90%;
+    margin-top: 2px;
+    border: solid gray 1px;
+    height: 40px;
+    font-family: sans-serif;
+    border-radius: 2px;
+    word-spacing: 7px;
+    padding-bottom: 8px;
+
+}
+
+
+.tovarene-link{
+    text-decoration: none;
+    color: black;
+}
+.icon{
+    width: 24px;
+    height: 24px;
+    fill: #5f6368;
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-left: 10px;
+}

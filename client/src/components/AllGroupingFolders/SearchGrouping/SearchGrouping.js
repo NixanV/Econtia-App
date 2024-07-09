@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { getAllGrouping } from "../../../services/groupingService";
+import { GroupingComponent } from "../GroupingComponent/GroupingComponent";
+import style from "./searchgrouping.module.css"
 
 
-
-export const SearachingGrouping = () => {
+export const SearchingGrouping = () => {
 
     const [lines, setLines] = useState([]);
 
@@ -20,7 +21,7 @@ export const SearachingGrouping = () => {
         <div>
             no lines existed
         </div> : lines.map((line) => (
-            <TovareneComponent key={line._id} {...line} />
+            <GroupingComponent key={line._id} {...line} />
         ))}
     </section>
     )

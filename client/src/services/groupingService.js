@@ -1,5 +1,5 @@
 
-const baseUrl = "http://localhost:3030/grouping"
+const baseUrl = "http://localhost:3030/jsonstore/grupirane"
 
 export const getAllGrouping = async () => {
     const response = await fetch(baseUrl);
