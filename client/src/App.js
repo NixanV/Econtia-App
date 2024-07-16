@@ -20,7 +20,6 @@ function App() {
   const onLoginSubmit = async (data) => {
     try {
       const res = await login(data);
-      console.log(res);
       setAuth(res);
       navigate("/home")
       
@@ -45,7 +44,6 @@ function App() {
             <Route path="/tovarene" element={<TursiTovarene />} />
             <Route path="/tovarene/:tovareneId" element={<TovareneDetails />} /> 
             <Route path="/tovarene-men" element={<TovareneMen />} />
-
             <Route path="/grupirane" element={<SearchingGrouping />} />
           </Routes>
         </AuthContext.Provider>
