@@ -15,6 +15,8 @@ export const NovTovarene = () => {
         opened: false,
     });
 
+    let clickingSubmitTimes = 0;
+
 
     const validateInput = () => {
         return(
@@ -35,11 +37,15 @@ export const NovTovarene = () => {
             })
         )
         setLoadedData(validateInput())
-        console.log(data.nameOfLine);
         console.log(validateInput());
         
     }
     
+    const clickingSubmit = (e) => {
+        clickingSubmitTimes += 1;
+        console.log(clickingSubmitTimes);
+        
+    }
 
 
     const onSubmitHandler = async (e, info) => {
@@ -54,39 +60,49 @@ export const NovTovarene = () => {
                    
         <Form onSubmit={(e) => onSubmitHandler(e, data)} className={style["form-nov-tovarene"]}>
             <Form.Group className={style["mb-3"]} controlId="formBasicEmail">
-                <Form.Label>Номер на линията: </Form.Label>
+                <Form.Label className={style["labels-nov-tovarene"]}>Номер на линията: </Form.Label>
                 <Form.Control
+                    className={style["textarea-nov-t"]}
                     type="text"
                     name="numberOfLine"
                     onChange={(e) => changeHandler(e)}
                     value={data.numberOfLine}
+                    required
                 />
             </Form.Group>
 
             <Form.Group className={style["mb-3"]} controlId="formBasicPassword">
-                <Form.Label>Име на линията: </Form.Label>
+                <Form.Label className={style["labels-nov-tovarene"]}>Име на линията: </Form.Label>
                 <Form.Control 
+                    className={style["textarea-nov-t"]}
                     type="text"
                     name="nameOfLine"
                     onChange={(e) => changeHandler(e)}
                     value={data.nameOfLine}
+                    required
                 />
             </Form.Group>
 
             <Form.Group className={style["mb-3"]} controlId="formBasicPassword">
-                <Form.Label>Шофьор: </Form.Label>
+                <Form.Label className={style["labels-nov-tovarene"]}>Шофьор: </Form.Label>
                 <Form.Control
+                    className={style["textarea-nov-t"]}
                     type="text"
                     name="driver"
                     onChange={(e) => changeHandler(e)}
                     value={data.driver}
+                    required
                 />
             </Form.Group>
                     
-            <Button variant="primary" type="submit" disabled={!loadedData}>
+            <Button className={style["submit-button-nov-t"]} variant="primary" 
+                    type="submit"  onClick={(e) => clickingSubmit(e)}>
                 Submit
             </Button>
-        </Form>                           
+
+        
+            
+        </Form>                         
     )
     
 }

@@ -4,8 +4,59 @@
 }
 
 .form-nov-tovarene{
-  margin-top: 50px;
-  margin-left: 150px;
+  margin-top: 150px;
+  margin-left: 350px;
+}
+
+.submit-button-nov-t{
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  width: 150px;
+  word-break: break-word;
+  border: 0;
+  margin-top: 40px;
+  margin-left: 30px;
+  
+}
+
+
+.submit-button-nov-t:hover{
+  background-color: #FFFFFF;
+  color: #5E5DF0;
+  transition-duration: 0.5s;
+  
+}
+
+.submit-label{
+  color: red;
+}
+
+.labels-nov-tovarene{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+
+.mb-3{
+  width: 600px;
+  margin-top: 20px;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  
+}
+.textarea-nov-t{
+  font-size: 20px;
 }
 
 .input-text{
