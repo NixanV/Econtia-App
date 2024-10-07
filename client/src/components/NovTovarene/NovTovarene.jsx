@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {useState } from "react";
 import style from "./novTovarene.module.css";
 import {Button, Form} from "react-bootstrap";
 import { postNewLoading } from "../../services/loadingService";
@@ -18,26 +18,12 @@ export const NovTovarene = () => {
     let clickingSubmitTimes = 0;
 
 
-    const validateInput = () => {
-        return(
-            data.numberOfLine.trim() !== "" &&
-            data.nameOfLine.trim() !== "" &&
-            data.driver.trim() !== ""
-        )
-    }
-
-    
-
-    const [loadedData, setLoadedData] = useState(validateInput());
-
     const changeHandler = (e) => {
         setData( state => ({
             ...state,  
             [e.target.name]: e.target.value 
             })
         )
-        setLoadedData(validateInput())
-        console.log(validateInput());
         
     }
     
