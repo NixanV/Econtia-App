@@ -1,0 +1,106 @@
+.main-section{
+    margin-top: 130px;
+    margin-left: 150px;
+}
+
+.form-nov-tovarene{
+  margin-top: 150px;
+  margin-left: 350px;
+}
+
+.submit-button-nov-t{
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  width: 150px;
+  word-break: break-word;
+  border: 0;
+  margin-top: 40px;
+  margin-left: 30px;
+  
+}
+
+
+.submit-button-nov-t:hover{
+  background-color: #FFFFFF;
+  color: #5E5DF0;
+  transition-duration: 0.5s;
+  
+}
+
+.submit-label{
+  color: red;
+}
+
+.labels-nov-tovarene{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+
+.mb-3{
+  width: 600px;
+  margin-top: 20px;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  
+}
+.textarea-nov-t{
+  font-size: 20px;
+}
+
+.input-text{
+    width: 70%;
+    font-size: 20px;
+    height: 40px;
+}
+
+
+.registration-form {
+    font-family:'Open Sans Condensed', sans-serif;
+      width: 400px;
+    min-width:250px;
+      margin: 20px auto;
+      position: relative;
+  }
+  
+.registration-form .fieldset {
+      background-color:#d5d5d5;
+  
+      border-radius: 3px;
+    
+  }
+  
+.registration-form legend {
+      text-align: center;
+      background: #364351;
+      width: 100%;
+      padding: 30px 0;
+      border-radius: 3px 3px 0 0;
+      color: white;
+  font-size:2em;
+  }
+  
+  .fieldset form{
+    border:1px solid #2f2f2f;
+    margin:0 auto;
+    display:block;
+    width:100%;
+    padding:30px 20px;
+    box-sizing:border-box;
+    border-radius:0 0 3px 3px;
+  }
+  .placeholder .registration-form label {
+      display: none;
+  }
+  
