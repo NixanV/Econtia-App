@@ -8,18 +8,40 @@ export const SearchingGrouping = () => {
 
     const [lines, setLines] = useState([]);
 
+    // useEffect(() => {
+    //     getAllGrouping().then(
+    //         result => {
+    //         setLines(Object.values(result))
+    //     })
+    // }, [])
+
+
     useEffect(() => {
-        getAllGrouping().then(result => {
-            setLines(Object.values(result))
-        })
-    }, [])
+        const fetchData = async () =>{
+            try{
+                const res = await getAllGrouping();                
+                if(res == null || res.length === 0 ){
+                    console.log("no data");
+                    setLines([])
+                    return;
+                }
+                setLines(Object.values(res))
+            }
+            catch(error){
+                console.log("error!");
+                
+            }
+        }
+        fetchData()
+    },[])
 
-
+    console.log(lines);
+    
     return(
         <section className={style["section-t-grupirane"]}>
-        {!lines ? 
+        {lines.length === 0 ? 
         <div>
-            no lines existed
+            no groups existed
         </div> : lines.map((line) => (
             <GroupingComponent key={line._id} {...line} />
         ))}
