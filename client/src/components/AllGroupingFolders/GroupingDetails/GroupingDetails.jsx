@@ -20,20 +20,21 @@ export const GroupingDetails = () => {
     
 
     return(
-        <>
+        <section className={style["grouping-details-section"]}>
             <div>
                 <input type="text" className={style["input-text"]} />
             </div>
             <div className={style["bottom-group"]}>
                 <div classname={style["number-checked"]}>
-                    0/{detail.numberPackeges}
+                    0/{detail.numberOfPackeges}
                 </div>
                 <div className={style["number-of-transport"]}>
-                    {numberOfTransportPackeges} Транспортни опаковки
+                    <p>{numberOfTransportPackeges}</p>
+                    <p>Транспортни опаковки</p>
                 </div>
             </div>
             
-        </>
+        </section>
         
     )
 }
