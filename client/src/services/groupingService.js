@@ -26,3 +26,18 @@ export const getOneGrouping = async( id) =>{
         console.log("error in receiving right data");
     }
 }
+
+export const postNewGrouping = async (data) => {
+    try {
+        return await fetch(baseUrl, {
+            method: "POST",
+            headers: {"content-type":"application/json"},
+            body: JSON.stringify(data)
+
+        })
+        .then(res => res.json());
+    } catch (error) {
+        console.log("can't post data");
+        
+    }
+}
