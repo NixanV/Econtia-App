@@ -11,6 +11,7 @@ import { TursiTovarene } from "./components/TursiTovarene/TursiTovarene";
 import { TovareneDetails } from "./components/TovareneDetails/TovareneDetails";
 import { TovareneMen } from "./components/TovareneMen/TovareneMen";
 import { SearchingGrouping } from "./components/AllGroupingFolders/SearchGrouping/SearchGrouping";
+import { NewGrouping } from "./components/AllGroupingFolders/NewGrouping/NewGrouping";
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
             <Route path="/tovarene/:tovareneId" element={<TovareneDetails />} /> 
             <Route path="/tovarene-men" element={<TovareneMen />} />
             <Route path="/grupirane" element={<SearchingGrouping />} />
+            <Route path="/nov-grupirane" element={<NewGrouping />} />
           </Routes>
         </AuthContext.Provider>
         

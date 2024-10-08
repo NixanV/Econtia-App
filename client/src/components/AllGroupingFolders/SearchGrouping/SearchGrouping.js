@@ -40,7 +40,7 @@ export const SearchingGrouping = () => {
     return(
         <section className={style["section-t-grupirane"]}>
         {lines.length === 0 ? 
-        <div>
+        <div className={style["no-content"]}>
             no groups existed
         </div> : lines.map((line) => (
             <GroupingComponent key={line._id} {...line} />
