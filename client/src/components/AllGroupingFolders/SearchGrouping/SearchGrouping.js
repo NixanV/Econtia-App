@@ -34,8 +34,6 @@ export const SearchingGrouping = () => {
         }
         fetchData()
     },[])
-
-    console.log(lines);
     
     return(
         <section className={style["section-t-grupirane"]}>

@@ -9,26 +9,31 @@ export const NewGrouping = () => {
     const navigate = useNavigate();
 
     const [data, setData] = useState({
-        numberOfLine: '',
-        nameOfCity: '',
-        numberOfPackeges: '',
+        numberOfLine: "",
+        nameOfCity: "",
+        numberOfPackeges: "",
     })
+
+ 
+
+    const changeHandler = (e) => {
+        setData(state => ({
+            ...state,
+            [e.target.name]: e.target.value
+        })
+    )
+    }
+
+    console.log(data.nameOfCity);
+
 
     const onSubmitHandler = async (e, data) => {
         e.preventDefault();
         const res = await postNewGrouping(data);
         navigate(`/grupirane/${res._id}`, {replace:true})
-    }
-
-    const changeHandler = (e) => {
-        setData(state => ({
-            
-            ...state,
-            [e.target.name]: [e.target.value]
-        })
-    )
-    }
-
+    } 
+    
+    
     const clickingSubmit = () => {
         return null;
     }
@@ -52,9 +57,9 @@ export const NewGrouping = () => {
                 <Form.Control 
                     className={style["textarea-nov-t"]}
                     type="text"
-                    name="nameOfLine"
+                    name="nameOfCity"
                     onChange={(e) => changeHandler(e)}
-                    value={data.nameOfLine}
+                    value={data.nameOfCity}
                     required
                 />
             </Form.Group>
@@ -64,9 +69,9 @@ export const NewGrouping = () => {
                 <Form.Control
                     className={style["textarea-nov-t"]}
                     type="text"
-                    name="driver"
+                    name="numberOfPackeges"
                     onChange={(e) => changeHandler(e)}
-                    value={data.driver}
+                    value={data.numberOfPackeges}
                     required
                 />
             </Form.Group>

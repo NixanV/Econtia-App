@@ -20,7 +20,8 @@ export const TovareneDetails = () => {
     }, []);
 
     detail.opened = true;
-    console.log(detail.opened);
+    console.log(tovareneId);
+    
 
     return(
         <>

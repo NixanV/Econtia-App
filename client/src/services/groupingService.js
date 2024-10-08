@@ -16,10 +16,12 @@ export const getAllGrouping = async () => {
     }
 }
 
-export const getOneGrouping = async( id) =>{
+export const getOneGrouping = async(id) =>{
     try{
         const response  = await fetch(`${baseUrl}/${id}`)
         const result = await response.json();
+        console.log(response);
+        
         return result;
     }
     catch (error ){
@@ -27,12 +29,12 @@ export const getOneGrouping = async( id) =>{
     }
 }
 
-export const postNewGrouping = async (data) => {
+export const postNewGrouping = async (info) => {
     try {
         return await fetch(baseUrl, {
             method: "POST",
             headers: {"content-type":"application/json"},
-            body: JSON.stringify(data)
+            body: JSON.stringify(info)
 
         })
         .then(res => res.json());
